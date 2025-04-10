@@ -29,6 +29,12 @@ struct ContentView: View {
                 answer = number1 - number2
             }
             .foregroundStyle(.cyan)
+            Button("Multiply") {
+                answer = number1 * number2
+            }
+            .foregroundStyle(.purple)
+            .padding()
+
         }
         .padding()
         Text("\(answer)")
