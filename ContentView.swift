@@ -7,9 +7,16 @@ struct ContentView: View {
     var body: some View {
         Text("Calculator")
             .bold()
+        HStack{
+            
+            
+            TextField("", value: $number1, format: .number )
+                .textFieldStyle(.roundedBorder)
+            
+            TextField("", value: $number2, format: .number)
+                .textFieldStyle(.roundedBorder)
+        }
         
-        TextField("", value: $number1, format: .number )
-        TextField("", value: $number2, format: .number)
         HStack{
             
             
